@@ -7,13 +7,13 @@ import LargeCard from "../components/LargeCard"
 import Footer from "../components/Footer"
 
 
-const Home = ({ exploreData, cardData }) => {
+const Home= ({ exploreData, cardData }) => {
 
   return (
     <div >
       <Head>
         <title>Airbnb</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://www.vectorlogo.zone/logos/airbnb/airbnb-tile.svg" />
       </Head>
       <Header />
       <Banner />
@@ -44,7 +44,7 @@ const Home = ({ exploreData, cardData }) => {
         />
 
       </main>
-      <Footer />
+        <Footer />
 
     </div>
   )
