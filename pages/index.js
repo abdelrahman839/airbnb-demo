@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from "../components/Header"
 import Banner from "../components/Banner"
@@ -8,7 +7,7 @@ import LargeCard from "../components/LargeCard"
 import Footer from "../components/Footer"
 
 
-const Home: NextPage = ({ exploreData, cardData }) => {
+const Home = ({ exploreData, cardData }) => {
 
   return (
     <div >
@@ -45,13 +44,13 @@ const Home: NextPage = ({ exploreData, cardData }) => {
         />
 
       </main>
-        <Footer />
+      <Footer />
 
     </div>
   )
 }
 
-export default Home
+export default Home;
 
 export const getStaticProps = async () => {
   const exploreData = await fetch('http://links.papareact.com/pyp').then(res => res.json());
